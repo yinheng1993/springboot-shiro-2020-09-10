@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>toLogin页面</title>
+</head>
+<body>
+<h2>此处为toLogin页面</h2>
+<h2 th:text="${error}"></h2>
+<form method="post" action="login">
+    用户名：<input type="text" name="name"/>
+    密码：<input type="text" name="password"/>
+    <input type="submit" value="登录"/>
+</form>
+</body>
+</html>
